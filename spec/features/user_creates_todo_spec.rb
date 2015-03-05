@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature 'User Creates todo' do
   scenario 'successfully' do
-    visit root_path
+    sign_in
 
     click_on "Add a new todo"
     fill_in "Title", with: "Buy Milk"
